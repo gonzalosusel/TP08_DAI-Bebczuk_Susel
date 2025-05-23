@@ -3,12 +3,12 @@ import { SafeAreaView, StyleSheet, Text, TextInput, View, Image, Button } from '
 
 export default function App() {
   return (<>
-    <Text>Login App (Bebczuk, Susel)</Text>
+    <Text style={{marginTop: 30, textAlign: "center"}}>Login App (Bebczuk, Susel)</Text>
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
 
-      <View style={{gap: 5}}>
-        <Image source={{uri: "https://brandemia.org/contenido/subidas/2023/01/logo-coca-cola-2003-2020-1024x576.png"}}/>
+      <View style={{gap: 5, alignItems: "center"}}>
+        <Image source={require("./assets/cover.jpg")} resizeMode="center"/>
 
         <TextInput style={styles.input} placeholder="Email"/>
         <TextInput style={styles.input} placeholder="Contraseña" secureTextEntry={true}/>
@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
   input: {
     borderColor: "#7B57D6",
     borderWidth: 1,
+    width: 340
   },
   button: {
   }
